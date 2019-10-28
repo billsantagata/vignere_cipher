@@ -11,7 +11,7 @@
 #include <string>
 using namespace std;
 
-char mode_select();
+void mode_select();
 void encrypt_message();
 void decrypt_message();
 void encrypt_file();
@@ -28,16 +28,12 @@ int main(void){
     char mode(0);
     
     print_title();
-    
-    do{
-        mode = mode_select();
-    }
-    while(mode != 'Q' && mode != 'q');
+    mode_select();
     
     return 0;
 }
 
-char mode_select(){
+void mode_select(){
     char mode(0);
     
     print_border(1);
@@ -55,15 +51,12 @@ char mode_select(){
         case '4': decrypt_file();     break;
         
         default:
-            return 'Q';
+            return;
     }
     
     print_border(3);
-    cout << "Press Q to quit or any other key to return to the menu.";
-    print_border(3);
-    cin >> mode;
     
-    return mode;
+    return;
 }
 
 void encrypt_message(){
