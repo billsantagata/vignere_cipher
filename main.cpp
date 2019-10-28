@@ -24,9 +24,7 @@ void print_menu();
 void print_border(int style);
 
 
-int main(void){
-    char mode(0);
-    
+int main(void){    
     print_title();
     mode_select();
     
