@@ -1,8 +1,9 @@
 /*******************************************************************************
  VIGNERE CIPHER
  
- Author: William Santagata
- Date: July 18, 2018
+ Author:  William Santagata
+ Date:    July 18, 2018
+ Edited:  October 27, 2019
  ******************************************************************************/
  
 #include <iostream>
